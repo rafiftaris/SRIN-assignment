@@ -1,0 +1,9 @@
+---
+version: "3.9" # version of docker-compose
+
+services:
+  custom-container: # service name
+    image: custom-image # image that will be used
+    ports:
+      - 8000:8000 # ports to deploy the service
+    command: tail -F anything
