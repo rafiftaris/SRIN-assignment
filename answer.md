@@ -129,7 +129,7 @@ The ansible playbook script can be checked [here](Ansible/playbook.yaml). Use th
 
 ## Kubernetes
 
-Problem: Can't run kubectl commands because connection refused to localhost:8080. Have attempted to copy the admin.conf file to /home/user/ directory.
+> **Problem**: Can't run kubectl commands because connection refused to `localhost:8080`. Have attempted to copy the admin.conf file to `/home/user/` directory after `kubeadm init` but the error still persists.
 
 ### Create a Deployment (Stateless Application) based on the YAML file
 
@@ -143,14 +143,22 @@ Lorem ipsum
 
 ### List Pods
 
-Lorem ipsum
+To list all available pods, use this command:
+
+> `kubectl get pods -A`
 
 
 ### List Service
 
-Lorem ipsum
+To list all services, use this command:
+
+> `kubectl get services -A`
 
 
 ### Differences between Pods and Deployment
 
-Lorem ipsum
+- Pods
+Kubernetes pods is the smallest unit of deployment. Kubernetes pods may contain a cluster of one or more containers that share the same configurations. Containers that in the same pods can communicate and share data easily through **localhost**. Basically, a Kubernetes pod is intended to run a specific task of the application. Kubernetes pod is created by using pod template.
+
+- Deployment
+Kubernetes deployment is a tool that manages the performance and specifies the desired behavior or traits of a pod. Developers use Kubernetes Deployment to communicate what they want from an application, so Kubernetes can take steps to achieve the desired state of application.
