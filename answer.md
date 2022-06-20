@@ -129,23 +129,28 @@ The ansible playbook script can be checked [here](Ansible/playbook.yaml). Use th
 
 ## Kubernetes
 
+Problem: Can't run kubectl commands because connection refused to localhost:8080. Have attempted to copy the admin.conf file to /home/user/ directory.
+
 ### Create a Deployment (Stateless Application) based on the YAML file
 
-asfhasfhas
+Lorem ipsum
 
 
 ### Access App/Service from Outside Kubernetes Network
 
-dfhagasdfh
+Lorem ipsum
+
 
 ### List Pods
 
-ahsgasfh
+Lorem ipsum
+
 
 ### List Service
 
-hasdfadfhh
+Lorem ipsum
+
 
 ### Differences between Pods and Deployment
 
-ahsdfasfhasdfh
+Lorem ipsum
